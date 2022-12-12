@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <meta name="author" content="Yash Sharma">
+        <title>
+            Cell Phone Pre-Order Registration
+        </title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="content">
+        <h1>Cell Phone Pre-Order Form</h1>
+        <form action="./home.html" onsubmit="myFunction()">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="dob">Enter Date Of Birth:</label>
+            <input type="date" id="dob" name="dob"><br>
+            <label for="phone">Enter your phone number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            <small>Format: 123-456-7890</small><br>
+            <label for="address">Enter your Mailing Address:</label><br>
+            <textarea rows="4" cols="50" name="address">Enter text here...</textarea><br>
+
+            <label for="mobile">Choose a mobile to buy:</label><br>
+            <select name="mobile" id="mobile">
+                <option value="iphone14">Iphone 14</option>
+                <option value="iphone14plus">Iphone 14 Plus</option>
+                <option value="iphone14pro">Iphone 14 Pro</option>
+                <option value="iphone14promax">Iphone 14 Pro Max</option>
+            </select><br>
+
+            <label for="storage">Choose the mobile storage:</label><br>
+            <select name="storage" id="storage">
+                <option value="gb1">128gb</option>
+                <option value="gb2">256gb</option>
+                <option value="gb3">512gb</option>
+            </select><br>
+
+            <label for="colour">Choose color:</label><br>
+            <select name="colour" id="storage">
+                <option value="c1">Space Black</option>
+                <option value="c2">Deep Purple</option>
+                <option value="c3">White</option>
+            </select><br>
+
+            <label for="email">Enter your email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="pass">Password (8 characters minimum):</label><br>
+            <input type="password" id="pass" name="password" minlength="8" required><br>
+            <input type="submit" value="Submit">
+        </form>
+        </div>
+        <script>
+            function myFunction() {
+              alert("The form was submitted");
+            }
+        </script>
+    </body>
+</html>

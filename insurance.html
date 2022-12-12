@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <meta name="author" content="Yash Sharma">
+        <title>
+            Buying an Insurance
+        </title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="content">
+        <h1>Insurance Details Form</h1>
+        <form action="./home.html" onsubmit="myFunction()">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="dob">Enter Date Of Birth:</label>
+            <input type="date" id="dob" name="dob"><br>
+            <label for="phone">Enter your phone number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            <small>Format: 123-456-7890</small><br>
+            <label for="address">Enter your Mailing Address:</label><br>
+            <textarea rows="4" cols="50" name="address">Enter text here...</textarea><br>
+
+            <label for="insurance">Choose a insurance plan to buy:</label><br>
+            <select name="insurance" id="insurance">
+                <option value="economy">Economy</option>
+                <option value="choiceplus">Economy Choice Plus</option>
+                <option value="premium">Premium</option>
+            </select><br>
+
+            <label for="yrs">Choose Number of Years:</label><br>
+            <select name="yrs" id="yrs">
+                <option value="y1">1 Year</option>
+                <option value="y2">3 Years</option>
+                <option value="y3">5 Years</option>
+            </select><br>
+
+            <label for="pay">Type of Payment</label><br>
+            <select name="colour" id="storage">
+                <option value="p1">Cash</option>
+                <option value="p2">Debit/Credit Card</option>
+                <option value="p3">Internet Banking</option>
+            </select><br>
+
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email"><br>
+            <label for="pass">Password (8 characters minimum):</label>
+            <input type="password" id="pass" name="password" minlength="8" required><br>
+            <input type="submit" value="Submit">
+        </form>
+        </div>
+        <script>
+            function myFunction() {
+              alert("The form was submitted");
+            }
+        </script>
+    </body>
+</html>
